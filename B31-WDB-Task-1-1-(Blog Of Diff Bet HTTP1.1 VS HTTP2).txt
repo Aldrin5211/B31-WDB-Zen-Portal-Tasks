@@ -1,0 +1,58 @@
+Difference Between HTTP1.1 VS HTTP2:
+
+Introduction:
+
+HTTP is a Hyper Text Transfer Protocal Developed by Timothy Berners-Lee
+in 1989 as a Communication standard for the World Wide Web. More specifically, 
+HTTP is the method computers and servers use to request and send informations.
+
+HTTP1.1:
+
+The first usable version of HTTP was created in 1997. Because it went through several
+stages of development, this first version of HTTP was called HTTP/1.1.This is The 1st 
+Standardized Protocal For World Wide Web, This version is still in use on the web.HTTP 
+is a top-level application protocol that exchanges information between a client computer
+and a local or remote web server. In this process, a client sends a text-based request 
+to a server by calling a method like GET or POST. In response, the server sends a resource
+like an HTML page back to the client.
+
+
+HTTP2:
+
+In 2015, A new version of HTTP called HTTP/2 was created as The SPDY protocol, developed
+primarily at Google with the intention of reducing web page load latency by using techniques
+such as compression, multiplexing, and prioritization. From the beginning, many browsers 
+supported this standardization effort, including Chrome, Opera, Internet Explorer, and 
+Safari. Due in part to this browser support, there has been a significant adoption rate
+of the protocol since 2015, with especially high rates among new sites.
+
+HTTP1.1 VS HTTP2:
+
+HTTP/1.1 loads resources one after the other, so if one resource cannot be loaded, it 
+blocks all the other resources behind it. In contrast, HTTP/2 is able to use a single 
+TCP connection to send multiple streams of data at once sothat no one resource blocks 
+any other resource. HTTP/2 does this by splitting data into binary-code messages and 
+numbering these messages so that the client knows which stream each binary message 
+belongs to.
+
+Example:(For Better Understanding)
+
+Imagine that Alice wants to read a novel that her friend Bob wrote, but both Alice 
+and Bob only communicate through the regular mail. Alice sends a letter to Bob and 
+asks Bob to send her his novel. Bob decides to send the novel HTTP/1.1-style: He 
+mails one chapter at a time, and he only mails the next chapter after receiving a 
+reply letter from Alice confirming that she received the previous chapter. Using this 
+method of content delivery, it takes Alice many weeks to read Bob's novel.
+
+Now imagine that Bob decides to send Alice his novel HTTP/2-style: In this case, he 
+sends each chapter of the novel separately (to stay within the postal service's size 
+limits) but all at the same time. He also numbers each chapter: Chapter 1, Chapter 2,
+ etc. Now, Alice receives the novel all at once and can assemble it in the correct 
+order on her own time. If a chapter is missing, she may send a quick reply asking for 
+that specific chapter, but otherwise the process is complete, and Alice can read the 
+novel in just a few days.
+
+In HTTP/2, data is sent all at once, much like Bob when he sends Alice multiple 
+chapters at once. And just like Bob, developers get to number the chapters in HTTP/2. 
+They can decide if the text of a webpage loads first, or the CSS files, or the 
+JavaScript, or whatever they feel is most important for the user experience.
